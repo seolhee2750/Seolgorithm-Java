@@ -10,8 +10,17 @@ public class BOJ_2839 {
 		int n = Integer.parseInt(in.readLine());
 		int cnt = 0;
 		
-		if((n % 5) % 3 > 0) System.out.println(-1);
-		else System.out.println((n / 5) + ((n % 5) / 3));
+		while(true) {
+			if (n % 5 == 0) {
+				System.out.println(n/5 + cnt);
+				break;
+			} else if(n <= 0) {
+	            System.out.println(-1);
+	            break;
+	        } else {
+	        	n -= 3;
+	        	cnt++;
+	        }
+		}
 	}
-
 }
