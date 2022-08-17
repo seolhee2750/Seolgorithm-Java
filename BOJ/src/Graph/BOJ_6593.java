@@ -1,4 +1,4 @@
-package Implementation;
+package Graph;
 
 /**
  * BOJ #6593 상범 빌딩
