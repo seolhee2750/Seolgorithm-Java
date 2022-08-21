@@ -11,13 +11,14 @@
 
 </br>
 
-### 🏷 BOJ
+## 🏷 BOJ
 ```
 백준 문제 풀이
 ```
 - [BruteForce](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/BruteForce)
+- [Graph(DFS/BFS/BackTracking)](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Graph)
 - [DP](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/DP)
-- [Graph](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Graph)
+- [Greedy](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Greedy)
 - [Implementation](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Implementation)
 - [Math](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Math)
 - [Queue](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Queue)
@@ -27,11 +28,22 @@
 
 </br>
 
-### 🏷 SWEA
+## 🏷 SWEA
 ```
 소프트웨어 엑스퍼트 아카데미 문제 풀이
 ```
 - [D2](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/SWEA/src/D2)
 - [D3](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/SWEA/src/D3)
 - [D4](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/SWEA/src/D4)
+- [D5](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/SWEA/src/D5)
+- [Other](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/SWEA/src/Other)
 ###### 블로그 정리는 여기를 참고해주세요! 👉 [SWEA 풀이 정리](https://seolhee2750.tistory.com/category/%F0%9F%9F%A1%5B%20Java%20%5D/SWEA) 👈
+
+</br>
+
+## 🏷 JONGOL
+```
+정보올림피아드&알고리즘 문제 풀이
+```
+- [Greedy](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/JUNGOL/src/Greedy)
+###### 블로그 정리는 여기를 참고해주세요! 👉 [JUNGOL 풀이 정리](https://seolhee2750.tistory.com/category/%F0%9F%9F%A1%5B%20Java%20%5D/JUNGOL) 👈
