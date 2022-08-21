@@ -1,9 +1,9 @@
 package Graph;
 
 /**
- * BOJ #15655 N과 M (8)
+ * BOJ #15655 N과 M (6)
  * https://www.acmicpc.net/problem/15655
- * 백트래킹, 중복 조합
+ * 백트래킹, 조합
  */
 
 import java.io.BufferedReader;
@@ -29,7 +29,7 @@ public class BOJ_15655 {
 		
 		for(int i = startIdx; i < nums.length; i++) {
 			choosed[nth] = nums[i];
-			combi(nth+1, choosed, i);
+			combi(nth+1, choosed, i+1);
 		}
 	}
 
