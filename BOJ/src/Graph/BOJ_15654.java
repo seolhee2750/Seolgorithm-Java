@@ -3,7 +3,7 @@ package Graph;
 /**
  * BOJ #15654 N과 M (5)
  * https://www.acmicpc.net/problem/15654
- * 백트래킹, 순열BOJ_15654.java
+ * 백트래킹, 순열
  */
 
 import java.io.BufferedReader;
