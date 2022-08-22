@@ -1,0 +1,41 @@
+package DP;
+
+/**
+ * BOJ #12865 평범한 배낭
+ * https://www.acmicpc.net/problem/12865
+ * 냅색
+ * 
+ * 물건마다 가능한 최대 가치를 구해주는 것을 반복하는 방식으로 구현
+ * memory[i-1][j]와 memory[i-1][j-w]+v 중 더 큰 값을 골랐음 (현재 물건을 넣는 것이 유리한지, 안넣는 것이 유리한지 판단)
+ */
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class BOJ_12865 {
+
+	public static void main(String[] args) throws Exception {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		st = new StringTokenizer(in.readLine());
+		int n = Integer.parseInt(st.nextToken());
+		int k = Integer.parseInt(st.nextToken());
+		int[][] memory = new int[n+1][k+1];
+		
+		for(int i = 1; i < n+1; i++) {
+			st = new StringTokenizer(in.readLine());
+			int w = Integer.parseInt(st.nextToken());
+			int v = Integer.parseInt(st.nextToken());
+			
+			for(int j = 1; j < k+1; j++) {
+				if(j >= w) memory[i][j] = Math.max(memory[i-1][j], memory[i-1][j-w] + v);
+				else memory[i][j] = memory[i-1][j];
+			}
+		}
+		
+		System.out.println(memory[n][k]);
+	}
+
+}
