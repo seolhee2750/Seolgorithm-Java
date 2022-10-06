@@ -1,13 +1,15 @@
 package D3;
 
+/*
+ * SWEA #3307 최장증가부분수열
+ * DP, LIS 문제
+ */
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class SWEA_3307 {
-
-	static int n;
-	static int[] nums, lis;
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -16,18 +18,16 @@ public class SWEA_3307 {
 		
 		int tc = Integer.parseInt(in.readLine());
 		for(int t = 1; t <= tc; t++) {
-			n = Integer.parseInt(in.readLine());
-			nums = new int[n];
+			int n = Integer.parseInt(in.readLine());
+			int[] nums = new int[n];
+			int[] lis = new int[n];
+			int max = 0;
+			
 			st = new StringTokenizer(in.readLine());
 			for(int i = 0; i < n; i++) {
 				nums[i] = Integer.parseInt(st.nextToken());
-			}
-			
-			lis = new int[n];
-			int max = 0;
-			for(int i = 0; i < lis.length; i++) {
-				lis[i] = 1; // 1. 최소한 자기 스스로는 1짜리 lis
-				for(int j = 0; j < i; j++) { // 2. 이전에 찾았던 lis 중에서 끼어들어갈 여지가 있는가?
+				lis[i] = 1;
+				for(int j = 0; j < i; j++) {
 					if(nums[i] > nums[j] && lis[i] < lis[j]+1) {
 						lis[i] = lis[j] + 1;
 					}
