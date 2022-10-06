@@ -1,5 +1,11 @@
 package DP;
 
+/*
+ * BOJ #11053 가장 긴 증가하는 부분 수열
+ * https://www.acmicpc.net/problem/11053
+ * DP로 풀이
+ */
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
