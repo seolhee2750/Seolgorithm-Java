@@ -1,4 +1,4 @@
-package BruteForce;
+package Implementation;
 
 /*
  * BOJ #1213 팰린드롬 만들기
