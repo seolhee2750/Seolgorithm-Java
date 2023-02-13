@@ -1,4 +1,4 @@
-package BOJ.Graph;
+package Graph;
 
 /*
  * BOJ #1584 게임
