@@ -4,7 +4,7 @@
 <div align="right">
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fseolhee2750%2FSeolgorithm-Java&count_bg=%23FF0068&title_bg=%23D5A9CE&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-![BOJ](https://img.shields.io/badge/solved.ac-G2-DCA900) &nbsp;
+![BOJ](https://img.shields.io/badge/solved.ac-G1-DCA900) &nbsp;
 [![Tech Blog Badge](https://img.shields.io/badge/-tech%20blog-yellow?logo=bookstack&logoColor=FF2C8C)](https://seolhee2750.tistory.com/)
 
 </div>
