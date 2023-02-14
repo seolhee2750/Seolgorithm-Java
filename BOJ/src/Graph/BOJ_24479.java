@@ -1,70 +1,58 @@
 package Graph;
 
-/*
- * BOJ #24479 알고리즘 수업 - 깊이 우선 탐색 1
- * https://www.acmicpc.net/problem/24479
- * dfs
- */
-
 import java.io.*;
 import java.util.*;
 
 public class BOJ_24479 {
 
-    static ArrayList<ArrayList<Integer>> graph;
-    static int[] seq;
-    static boolean[] visited;
-    static int cnt;
-
-    public static void main(String[] args) throws IOException {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
-        int start = Integer.parseInt(st.nextToken());
-
-        graph = new ArrayList<>();
-        seq = new int[n+1];
-        visited = new boolean[n+1];
-
-        for (int i = 0; i <=n; i++) {
-        	graph.add(new ArrayList<>());
-        }
-            
-        for (int i = 0; i < m; i++) {
-            st = new StringTokenizer(br.readLine());
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
-            graph.get(a).add(b);
-            graph.get(b).add(a);
-        }
-
-        for (int i = 1; i <=n; i++) {
-        	Collections.sort(graph.get(i));
-        }
-
-        seq[start] = 1;
-        visited[start] = true;
-        cnt = 2;
-        dfs(start);
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= n; i++) {
-        	sb.append(seq[i] + "\n");
-        }
-            
-        System.out.println(sb);
-    }
-    
-    public static void dfs(int root) {
-        for (int vertex : graph.get(root)) {
-            if (!visited[vertex]) {
-                seq[vertex] = cnt++;
-                visited[vertex] = true;
-                dfs(vertex);
-            }
-        }
-    }
+	static int n, m, r;
+	static ArrayList<Integer>[] node;
+	static int[] visited;
+	static StringBuilder out = new StringBuilder();
+	static int cnt = 1;
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		
+		st = new StringTokenizer(in.readLine());
+		n = Integer.parseInt(st.nextToken());
+		m = Integer.parseInt(st.nextToken());
+		r = Integer.parseInt(st.nextToken()) - 1;
+		
+		visited = new int[n];
+		visited[r] = 1;
+		
+		node = new ArrayList[n];
+		for(int i = 0; i < n; i++) {
+			node[i] = new ArrayList<>();
+		}
+		
+		for(int i = 0; i < m; i++) {
+			st = new StringTokenizer(in.readLine());
+			int a = Integer.parseInt(st.nextToken()) - 1;
+			int b = Integer.parseInt(st.nextToken()) - 1;
+			
+			node[a].add(b);
+			node[b].add(a);
+		}
+		
+		for(int i = 0; i < n; i++) {
+			Collections.sort(node[i]);
+		}
+		
+		dfs(r);
+		for(int i = 0; i < n; i++) {
+			out.append(visited[i] + "\n");
+		}
+		System.out.print(out);
+	}
+	
+	public static void dfs(int r) {
+		for(int next: node[r]) {
+			if(visited[next] > 0) continue;
+			visited[next] = ++cnt;
+			dfs(next);
+		}
+	}
 }
