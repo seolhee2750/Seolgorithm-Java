@@ -24,6 +24,8 @@
 - [Queue](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Queue)
 - [Stack](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Stack)
 - [TwoPointer](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/TwoPointer)
+- [BinarySearch](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/BinarySearch)
+- [Strings](https://github.com/seolhee2750/Seolgorithm-Java/tree/main/BOJ/src/Strings)
 ###### 블로그 정리는 여기를 참고해주세요! 👉 [BOJ 풀이 정리](https://seolhee2750.tistory.com/category/%F0%9F%9F%A1%5B%20Java%20%5D/BOJ) 👈
 
 </br>
