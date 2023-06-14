@@ -1,5 +1,11 @@
 package Math;
 
+/**
+ * BOJ #9655 돌 게임
+ * https://www.acmicpc.net/problem/9655
+ * 수학
+ */
+
 import java.io.*;
 
 public class BOJ_9655 {
